@@ -93,6 +93,14 @@ def get_sum_zero_pairs(numbers):
         >>> sort_pairs( get_sum_zero_pairs([1, 3, -1, 1, 1, 0]) )
         [[-1, 1], [0, 0]]
     """
+    #This was really difficult
+    #I experimented with the itertools library and still struggled
+    #I figured it out until the last caveat
+    #I'm confused how to do this without recursion
+    sum_zero = {number for number in combinations(numbers,2) if sum(number) == 0}
+    sum_zero_listified = [list(pair) for pair in sum_zero]
+
+    return sum_zero_listified
 
     return []
 
