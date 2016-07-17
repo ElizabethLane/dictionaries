@@ -4,6 +4,7 @@
 dictionaries and sets.
 """
 
+from random import combinations
 
 def without_duplicates(words):
     """Given a list of words, return list with duplicates removed.
@@ -129,6 +130,31 @@ def top_chars(phrase):
     Do not count spaces, but count all other characters.
 
     """
+    #Initialize an empty dictionary
+    letter_counts = {}
+
+    #Iterate through argument phrase, adding key, value pair to letter_counts
+    for letter in phrase:
+        letter_counts[letter] = letter_counts.get(letter, 0) + 1
+
+    #Initialize empty list
+    most_common_letters = []
+    
+    
+    #Create a for loop to iterate through values in dictionary
+    for value in letter_counts.values():
+    #If statement that appends to list if value is less than or equal to 
+    #type in common
+        if  value >= most_common_letters[0]:
+            most_common_letters.append(value)
+
+    #return key(s) of highest value
+
+    return most_common_letters
+
+
+
+print top_chars("This is my phrase")
 
     return []
 
