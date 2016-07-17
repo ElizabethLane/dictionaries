@@ -224,7 +224,22 @@ def kids_game(names):
     good solutions here will definitely require a dictionary.
     """
 
-    return []
+    words = {}
+    results = []
+
+    results.append(names[0])
+    del words[names[0]]
+
+    for name in names:
+        letter = name[-1]
+        words[name] = letter
+    
+    for word in results:
+        if word[-1] == 
+
+    #I had to step away from this.  My brain is totally fried
+    #and I'm just getting my head wrapped around itself.  Let's go over this
+    #please
 
 #####################################################################
 # You can ignore everything below this.

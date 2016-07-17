@@ -4,7 +4,6 @@
 dictionaries and sets.
 """
 
-from random import combinations
 
 def without_duplicates(words):
     """Given a list of words, return list with duplicates removed.
@@ -154,7 +153,7 @@ def top_chars(phrase):
 
 
 
-print top_chars("This is my phrase")
+    print top_chars("This is my phrase")
 
     return []
 
